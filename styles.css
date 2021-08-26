@@ -1,0 +1,189 @@
+*{
+    margin: 0; 
+    padding:0;
+}
+body{
+    background-color: #C3E8C4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+@media only screen and (min-width: 760ox){
+    body{
+        width: 70%;
+        display: block;
+        padding-bottom: 30px;
+    }
+    .purpose{
+        margin: 300px;
+    }
+}
+header{
+    display: grid;
+    grid-template-areas: 
+    "NavegadorPrincipal";
+    justify-items: center;
+}
+
+.navegadorPrincipal{
+    grid-area: NavegadorPrincipal;
+    background-color: #C3E8C4;
+    display: grid;
+    width: 100%;
+    height: 250px;
+    justify-items: center;
+}
+nav{
+    grid-area: NavegadorPrincipal;
+    background-color: #C3E8C4;
+    display: grid;
+    width: 100%;
+    height: 250px;
+    justify-items: center;
+}
+nav p{
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px 30px;
+}
+nav ul{
+    float:left
+}
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+nav ul li a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    padding: 14px 14px;
+    text-decoration: none;
+
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: #C3E8C4;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li{
+    width: 180px;
+}
+nav ul li ul li a{
+    padding: 11px 14px;
+}
+nav ul li ul li a:hover{
+    background-color: #95C697;
+}
+.granpartePrincipal{
+    display: grid;
+    text-align: center;
+    grid-template-areas: 
+    "MainYLogo"
+    "quote"
+    "purpose"
+    "mystory"
+    "subscribeycontactyaside";
+    grid-template-rows: 1000px 500px 400px 600px 500px;
+}
+.mainYlogo{
+    grid-area: MainYLogo;
+    background-color: #C3E8C4;
+}
+.quote{
+    grid-area:quote
+}
+.purpose{
+    justify-content: space-evenly;
+    grid-area: purpose;
+    background-color: #C3E8C4;
+    display: flex;
+    flex-direction: row;
+}
+
+
+#mystory{
+    justify-content: space-evenly;
+    grid-area: mystory;
+    background-color: #C3E8C4;
+    display: grid;
+    grid-template-areas:
+    "titulo par1 par2";
+}
+.boxmystorytitle{
+    grid-area: titulo;
+}
+.boxParagraph1mystory{
+    grid-area: par1;
+}
+.boxParagraph2mystory{
+    grid-area: par2;
+}
+.subscribeycontactYaside{
+    grid-area: subscribeycontactyaside;
+    background-color: #C3E8C4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    padding: 300px 20px 10px 30px;
+}
+
+.logoFooter2{
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.logoFooter2:hover{
+    opacity: 1;
+}
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #95C697;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.search-box:hover > .search-text{
+    width: 240px;
+    padding: 0 6px;
+}
+.search-box:hover > .search-btn{
+    background: #C3E8C4;
+}
+.search-btn{
+    color: #95C697;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 40%;
+    background: #95C697;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: #95C697;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
